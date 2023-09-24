@@ -5,4 +5,6 @@ project(TaskDB LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-add_executable(TaskDB main.cpp)
+set(sources "TTaskDB.h" "TTaskDB.cpp")
+
+add_executable(${PROJECT_NAME} "main.cpp" ${sources})
